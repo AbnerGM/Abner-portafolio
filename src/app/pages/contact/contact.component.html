@@ -1,0 +1,39 @@
+<section id="contacto" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color:#00ffff; font-weight:bold;">Contáctame</h2>
+    <p class="text-center mb-5">
+      ¿Tienes un proyecto en mente o quieres colaborar? ¡Escríbeme!
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="contact-form" (submit)="enviarFormulario($event)">
+          <div class="mb-3">
+            <label for="name" class="form-label" style="color:#00ffff;">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Tu nombre" />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label" style="color:#00ffff;">Correo</label>
+            <input type="email" class="form-control" id="email" placeholder="tu@email.com" />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label" style="color:#00ffff;">Mensaje</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-cyan mt-3 px-5 py-2" style="border: 2px solid #00ffff; color:#00ffff; background:transparent;">
+              Enviar
+            </button>
+          </div>
+        </form>
+
+        <div *ngIf="mensajeVisible" class="alert mt-4 text-center" style="color:#00ffff; font-weight:bold;">
+          ¡Estamos trabajando en el proceso backend, gracias por tu paciencia!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

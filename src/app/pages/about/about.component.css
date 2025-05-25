@@ -1,0 +1,64 @@
+.about-section {
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 0rem;
+  min-height: 70vh !important;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: cyan;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 3px solid cyan;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.about-box {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 1px 20px rgba(0, 255, 255, 0.50);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 255, 255, 0.3);
+}
+
+.text-cyan {
+  color: cyan;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+  font-family: 'Verdana', sans-serif;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-box {
+    padding: 1.5rem;
+  }
+
+  .about-lead,
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+.contenedor-completo {
+  text-align: center !important;
+}

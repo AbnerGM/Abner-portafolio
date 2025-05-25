@@ -1,0 +1,49 @@
+<div id="inicio" class="container-fluid vh-100">
+  <div class="row g-0 h-100">
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-start mt-5 texto-derecha">
+      <p data-aos="fade-down" data-aos-delay="1400" data-aos-duration="1000" data-aos-easing="ease-out" class="mb-0 text-1">
+        Hola, mi nombre es
+      </p>
+
+      <h2 data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1500" data-aos-easing="ease-out" class="text-2">
+        Abner <span class="texto-5 p-3">Gomez</span>
+      </h2>
+
+      <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000" data-aos-easing="ease-out" class="text-1">
+        Soy un <span class="texto-5">Desarrollador Web</span>.
+      </p>
+
+      <div class="d-flex flex-wrap gap-3 justify-content-center mb-4 mt-4">
+        <div data-aos="fade-right" data-aos-delay="1600" data-aos-duration="600">
+          <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="1800" data-aos-duration="600">
+          <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="2000" data-aos-duration="600">
+          <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="2200" data-aos-duration="600">
+          <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="2400" data-aos-duration="600">
+          <a href="#" class="icon-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-delay="2400" data-aos-duration="600" data-aos-easing="ease-out">
+        <button class="btn btn-cyan mt-4" (click)="toggleLenguajes()">Lenguajes..</button>
+      </div>
+
+      <ul *ngIf="mostrarLenguajes" class="lista-lenguajes mt-3">
+        <li *ngFor="let lenguaje of lenguajes" class="lenguaje-item">
+          {{ lenguaje }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 p-0 d-flex justify-content-center align-items-center">
+      <img data-aos="zoom-in" data-aos-delay="1600" data-aos-duration="1000" data-aos-easing="ease-out" src="/img/prueba-img.png" alt="Imagen" class="img-fluid imagen-reducida">
+    </div>
+  </div>
+</div>

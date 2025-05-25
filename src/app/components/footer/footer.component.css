@@ -1,0 +1,10 @@
+.footer {
+  min-height: 20vh;
+  bottom: 0;
+  background-color: rgb(11, 131, 131);
+  color: black;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 10;
+}

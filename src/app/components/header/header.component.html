@@ -1,0 +1,85 @@
+<nav id="Inicio" class="navbar navbar-expand-lg px-3 p-3 p-sm-3 p-md-3 p-lg-4 p-xl-4">
+  <div class="container-fluid">
+    <a data-aos="fade-right" data-aos-delay="40" data-aos-duration="1200" data-aos-easing="ease-out" class="navbar-brand fw-bold fs-2" href="#">
+      <span class="text-info">Abner</span> <span class="text-unico">dev</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
+        <li class="nav-item">
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="700" data-aos-easing="ease-out">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" data-aos-easing="ease-out">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-out">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div data-aos="fade-up" data-aos-delay="900" data-aos-duration="700" data-aos-easing="ease-out">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <button 
+      *ngIf="!mensajeVisible"
+      (click)="mostrarMensaje()" 
+      class="btn btn-outline-primary ocultar-en-movil"
+      [attr.data-aos]="botonAnimado ? 'fade-right' : null"
+      [attr.data-aos-delay]="botonAnimado ? '2500' : null"
+      [attr.data-aos-duration]="botonAnimado ? '1200' : null"
+      [attr.data-aos-easing]="botonAnimado ? 'ease-out' : null"
+      href="cv.pdf"
+      download>
+      Descargar CV
+    </button>
+
+    <div *ngIf="mensajeVisible" class="alert alert-cyan mt-3" style="color: cyan; font-weight: bold;">
+      ¡Aún estamos en proceso de la creación del CV, mil disculpas, {{ nombre | uppercase }}! <br />
+      Fecha: {{ fecha | date:'fullDate' }}
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <ul class="navbar-nav gap-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+    </ul>
+
+    <a 
+      href="cv.pdf" 
+      download 
+      class="btn btn-outline-primary mt-4"
+      (click)="mostrarMensaje()">
+      Descargar CV
+    </a>
+  </div>
+</div>
