@@ -1,8 +1,7 @@
+
 .image-container {
   overflow: hidden;
 }
-
-
 
 .text-overlay {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -65,7 +64,6 @@ transition: 1s all ease;
   font-weight: 600;
 }
 
-/* Lista estilos */
 .lista-lenguajes {
   list-style: none;
   padding-left: 0;
@@ -75,7 +73,7 @@ transition: 1s all ease;
 }
 
 .lenguaje-item {
-  background-color: #e0f7fa; /* cyan claro */
+  background-color: #e0f7fa; 
   color: #007c91;
   padding: 8px 15px;
   border-radius: 20px;
@@ -90,7 +88,6 @@ transition: 1s all ease;
 }
 
 
-
 @media (max-width: 540px) {
   .g-0 {
     padding: 0 !important;
@@ -98,7 +95,7 @@ transition: 1s all ease;
 
 }
 .imagen-reducida {
-  max-width: 90%;  /* ajusta este valor según el tamaño deseado */
+  max-width: 90%; 
   max-height: 90%;
   border: 10px solid #0dcaf0;
   border-radius: 50%;
@@ -108,7 +105,7 @@ transition: 1s all ease;
 }
 
 .texto-derecha {
-  padding-left: 8vw !important; /* o prueba 12vw o más */
+  padding-left: 8vw !important;
   padding-top: 8vh;
 }
 .container-fluid{
@@ -117,7 +114,7 @@ transition: 1s all ease;
 
 @media (max-width: 1075px) {
   .texto-derecha {
-    padding-left: 0vw; /* Menos en pantallas pequeñas */
+    padding-left: 0vw; 
     padding-top: 10px !important;
   }.text-2{
   font-size: 3rem;
@@ -156,7 +153,6 @@ transition: 1s all ease;
     text-align: center;
   }
 
-  /* Centrar el texto */
   .texto-derecha {
     align-items: center !important; 
     text-align: center !important;  
@@ -178,7 +174,7 @@ transition: 1s all ease;
     border: 10px solid #0dcaf0;
     border-radius: 50%;
     box-shadow: 0 0 50px #0dcaf0 !important;
-     margin: 0 auto; 
+    margin: 0 auto; 
     display: block;
   }
 
@@ -202,12 +198,11 @@ transition: 1s all ease;
 }
 
 
-
 @media (max-width: 540px) {
   .texto-derecha {
     padding-left: 2vw;
-  }.text-2{
-  font-size: 5rem;
+  }.text-2 {
+  font-size: 3.6rem;
   }text-1{
   letter-spacing: 0rem !important ;
   font-size: 0rem !important;
@@ -220,11 +215,10 @@ transition: 1s all ease;
   }
 }
 body{
-   padding-top: 60px !important; /* menos si el navbar es más bajo */
+  padding-top: 60px !important;
 }
 
 
-/* Botón */
 .btn-cyan {
   background-color: transparent;
   color: white !important;
@@ -242,7 +236,6 @@ body{
   transform: scale(1.05) !important;
 }
 
-/* Lista de lenguajes (flex-wrap y responsive) */
 .lista-lenguajes {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -253,7 +246,6 @@ body{
   max-width: 100% !important;
 }
 
-/* Ítem de lenguaje */
 .lenguaje-item {
   background-color:  #17a2b8 !important;
   border-radius: 20px !important;
@@ -272,11 +264,9 @@ body{
   transform: scale(1.05) !important;
 }
 
-/* Animación */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsivo en móvil */
 

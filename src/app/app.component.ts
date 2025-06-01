@@ -2,7 +2,7 @@ import { Component, Inject, AfterViewInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import AOS from 'aos';
 
-import { RouterOutlet } from '@angular/router';
+
 import { HeaderComponent } from './components/header/header.component';
 import { PresentacionComponent } from './pages/presentacion/presentacion.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -14,7 +14,6 @@ import { FooterComponent } from './components/footer/footer.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     HeaderComponent,
     PresentacionComponent,
     AboutComponent,
