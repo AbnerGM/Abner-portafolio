@@ -3,7 +3,7 @@
 Este es mi portafolio web personal desarrollado con **Angular**, donde muestro quién soy, mis proyectos, mis habilidades y mis formas de contacto. Es una aplicación de una sola página (SPA) totalmente **responsive**, moderna y con animaciones llamativas.
 
 Una imagen de mi portafolio completo:
-
+🔗 Enlace al sitio web ←
 
 ![IMAGEN DE MI PORTAFOLIO WEB](https://github.com/user-attachments/assets/c52c2a06-6bb5-41a6-ac90-27f7eb02ee2f)
 
