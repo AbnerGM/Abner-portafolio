@@ -3,6 +3,7 @@
 Este es mi portafolio web personal desarrollado con **Angular**, donde muestro quién soy, mis proyectos, mis habilidades y mis formas de contacto. Es una aplicación de una sola página (SPA) totalmente **responsive**, moderna y con animaciones llamativas.
 
 Una imagen de mi portafolio completo:
+
 🔗 Enlace al sitio web ←
 
 ![IMAGEN DE MI PORTAFOLIO WEB](https://github.com/user-attachments/assets/c52c2a06-6bb5-41a6-ac90-27f7eb02ee2f)
@@ -60,7 +61,7 @@ El proyecto está subido a un servidor. Puedes verlo online aquí:
 🔗 [Enlace al sitio web](https://abner.alwaysdata.net/) ← 
 
 ## 📁 Estructura del proyecto
-
+```
 src/
 ├── app/
 │ ├── components/
@@ -78,7 +79,7 @@ src/
 yaml
 Copiar
 Editar
-
+```
 ## 📬 Contacto
 
 Si deseas comunicarte conmigo o contratarme, puedes usar el formulario de contacto del sitio o escribirme directamente:
@@ -100,7 +101,7 @@ Si deseas comunicarte conmigo o contratarme, puedes usar el formulario de contac
 - Conectar a backend con Firebase o Node.js.
 - Mejorar en la secciones con imagenes y mas interactivo.
 - Agregar mas sessiones.
-
+- Imagen de mi persona .
 ---
 
 Agradeciso por por visitar mi portafolio ✨ GRACIAS...
